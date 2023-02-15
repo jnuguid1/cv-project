@@ -1,6 +1,6 @@
 import './styles/App.css';
 import React, {Component} from 'react';
-import EditForm from './components/EditForm';
+import EditForm from './components/form/EditForm';
 import ResumePreview from './components/ResumePreview';
 
 class App extends Component {

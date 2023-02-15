@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import uniqid from 'uniqid';
-import GeneralInfoSection from './GeneralInfoSection';
-import EducationSection from './EducationSection';
-import WorkSection from './WorkSection';
-import SchoolEntry from './SchoolEntry';
-import WorkEntry from './WorkEntry';
+import GeneralInfoSection from '../GeneralInfoSection';
+import EducationSection from '../EducationSection';
+import WorkSection from '../WorkSection';
+import SchoolEntry from '../SchoolEntry';
+import WorkEntry from '../WorkEntry';
 
 class EditForm extends Component {
   constructor(props) {
