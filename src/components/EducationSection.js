@@ -5,10 +5,12 @@ class EducationSection extends Component {
   render() {
     const { onAddSchool } = this.props;
     return (
-      <div>
+      <div className="info-section">
         <SectionHeader name='Education' />
         {this.props.children}
-        <button onClick={onAddSchool}>Add</button>
+        <button type='button' id='add-school-button' onClick={onAddSchool}>
+          + Add Education
+        </button>
       </div>
     )
   }

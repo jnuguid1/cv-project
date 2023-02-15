@@ -5,10 +5,12 @@ class WorkSection extends Component {
   render() {
     const { onAddWork } = this.props;
     return (
-      <div>
+      <div className="info-section">
         <SectionHeader name='Work Experience' />
         { this.props.children }
-        <button onClick={onAddWork}>Add</button>
+        <button type='button' id='add-work-button' onClick={onAddWork}>
+          + Add Work
+        </button>
       </div>
     )
   }

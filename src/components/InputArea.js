@@ -2,11 +2,11 @@ import React, {Component} from "react";
 
 class InputArea extends Component {
   render() {
-    const { label, name } = this.props;
+    const { label, name, onChange, id } = this.props;
     return (
-      <div>
+      <div className='input-container'>
         <label htmlFor={name}>{label}</label>
-        <textarea name={name} />
+        <textarea id={id} onChange={onChange} name={name} />
       </div>
     )
   }

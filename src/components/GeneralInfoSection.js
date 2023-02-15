@@ -8,8 +8,10 @@ class GeneralInfoSection extends Component {
     return(
       <div className='info-section'>
         <SectionHeader name='General Information' />
-        <Input onChange={onChange} label='First Name' name='firstName' />
-        <Input onChange={onChange} label='Last Name' name='lastName' />
+        <div className="input-row">
+          <Input onChange={onChange} label='First Name' name='firstName' />
+          <Input onChange={onChange} label='Last Name' name='lastName' />
+        </div>
         <Input onChange={onChange} label='Email Address' name='email' />
         <Input onChange={onChange} label='Phone' name='phone' />
       </div>

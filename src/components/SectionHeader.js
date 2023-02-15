@@ -6,6 +6,7 @@ class SectionHeader extends Component {
     return (
       <div>
         <h2>{name}</h2>
+        <hr />
       </div>
     )
   }

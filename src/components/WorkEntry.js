@@ -10,9 +10,11 @@ class WorkEntry extends Component {
         <Input onChange={onChange} id={id} label='Company' name='company' />
         <Input onChange={onChange} id={id} label='Position Title' name='position' />
         <InputArea onChange={onChange} id={id} label='Job Description' name='jobDescription' />
-        <Input onChange={onChange} id={id} label='Start Date' name='jobStart' />
-        <Input onChange={onChange} id={id} label='End Date' name='jobEnd' />
-        <button id={id} onClick={onDelete}>Delete</button>
+        <div className="input-row">
+          <Input onChange={onChange} id={id} label='Start Date' name='jobStart' />
+          <Input onChange={onChange} id={id} label='End Date' name='jobEnd' />
+        </div>
+        <button className='delete-work-button' id={id} onClick={onDelete}>Delete Entry</button>
       </div>
     )
   }
