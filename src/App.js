@@ -4,6 +4,7 @@ import EditForm from './components/form/EditForm';
 import ResumePreview from './components/preview/ResumePreview';
 import WorkEntry from './components/form/WorkEntry';
 import SchoolEntry from './components/form/SchoolEntry';
+import AppHeader from './components/AppHeader';
 import uniqid from 'uniqid';
 
 class App extends Component {
@@ -50,7 +51,7 @@ class App extends Component {
           jobDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
           jobStart: 'May 2020',
           jobEnd: 'Aug 2020',
-          id: '1',
+          id: '2',
         },
         {
           company: 'Andie',
@@ -58,7 +59,7 @@ class App extends Component {
           jobDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
           jobStart: 'May 2020',
           jobEnd: 'Aug 2020',
-          id: '1',
+          id: '3',
         },
       ],
       schoolComponents: [],
@@ -120,7 +121,6 @@ class App extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    console.log(this.state);
     this.setState({
       showPreview: true,
     })
@@ -297,6 +297,11 @@ class App extends Component {
 
     return (
       <div className="app">
+        <AppHeader 
+          onSubmit={this.handleSubmit} 
+          onEdit={this.handleEdit}
+          showPreview={this.state.showPreview}
+        />
         {content}
       </div>
     );

@@ -14,7 +14,7 @@ class Header extends Component {
     return (
       <div className='header'>
         <h1>{`${firstName} ${lastName}`}</h1>
-        <div class="row-gap-32">
+        <div className="row-gap-32">
           <p>{city}, {province} {postal}</p>
           <p>{email}</p>
           <p>{phone}</p>

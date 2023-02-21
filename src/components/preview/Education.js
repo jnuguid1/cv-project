@@ -11,7 +11,7 @@ class Education extends Component {
             return (
               <li key={entry.id}>
                 <p>
-                  <span class="bold">{entry.school}</span>
+                  <span className="bold">{entry.school}</span>
                 </p>
                 <p>{entry.degree} {entry.study} {entry.schoolStart} to {entry.schoolEnd}</p>
               </li>

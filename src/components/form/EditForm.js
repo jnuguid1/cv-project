@@ -23,7 +23,6 @@ class EditForm extends Component {
 
     return (
     <form id='edit-form' onSubmit={onSubmit}>
-      <h1>Resume Builder</h1>
       <GeneralInfoSection
         onChange={onGeneralChange}
         values={generalDefaults}
@@ -40,7 +39,6 @@ class EditForm extends Component {
         onSkillChange={onSkillChange}
         skills={skills}
       />
-      <button id='preview-button' type='submit'>Preview Resume</button>
     </form>
     )
   }

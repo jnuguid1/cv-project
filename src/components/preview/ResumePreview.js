@@ -11,14 +11,7 @@ class ResumePreview extends Component {
     const {inputs, onEdit} = this.props;
     return(
       <div className='preview-container'>
-        <button 
-          type='button'
-          className='regular-button edit-resume-button'
-          onClick={onEdit}
-        >
-          Edit Resume
-        </button>
-        <div class="resume-container">
+        <div className="resume-container">
           <Header
             firstName={inputs.firstName}
             lastName={inputs.lastName}
@@ -28,7 +21,7 @@ class ResumePreview extends Component {
             postal={inputs.postal}
             province={inputs.province}
           />
-          <div class="resume-body">
+          <div className="resume-body">
             <ProfessionalSummary summary={inputs.summary} />
             <hr/>
             <WorkExperience workList={inputs.workInputs} />
