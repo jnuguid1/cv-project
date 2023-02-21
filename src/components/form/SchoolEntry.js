@@ -3,15 +3,45 @@ import Input from "./Input"
 
 class SchoolEntry extends Component {
   render() {
-    const { onChange, onDelete, id } = this.props;
+    const { onChange, onDelete, id, values } = this.props;
     return (
       <div>
-        <Input onChange={onChange} id={id} label='School Name' name='school' />
-        <Input onChange={onChange} id={id} label='Degree/Diploma' name='degree' />
-        <Input onChange={onChange} id={id} label='Title of Study' name='study' />
+        <Input 
+          value={values.school}
+          onChange={onChange}
+          id={id}
+          label='School Name'
+          name='school'
+        />
+        <Input 
+          value={values.degree}
+          onChange={onChange}
+          id={id}
+          label='Degree/Diploma'
+          name='degree' 
+        />
+        <Input 
+          value={values.study}
+          onChange={onChange}
+          id={id}
+          label='Title of Study'
+          name='study'
+        />
         <div className="input-row">
-          <Input onChange={onChange} id={id} label='Start Date' name='schoolStart' />
-          <Input onChange={onChange} id={id} label='End Date' name='schoolEnd' />
+          <Input 
+            value={values.schoolStart}
+            onChange={onChange}
+            id={id}
+            label='Start Date'
+            name='schoolStart'
+          />
+          <Input
+            value={values.schoolEnd}
+            onChange={onChange}
+            id={id}
+            label='End Date'
+            name='schoolEnd'
+          />
         </div>
         <button id={id} className='delete-school-button' onClick={onDelete}>
           Delete Entry

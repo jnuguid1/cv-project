@@ -1,0 +1,97 @@
+#edit-form h1 {
+  font-size: 38px;
+}
+
+#edit-form h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+#edit-form hr {
+  margin-bottom: 16px;
+}
+
+.info-section {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.info-section .input-row {
+  display: flex;
+  gap: 24px;
+}
+
+.input-row .input-container {
+  width: 50%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.input-container label,
+label[for='skill'] {
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.input-container input {
+  padding: 4px;
+}
+
+.delete-school-button,
+.delete-work-button {
+  margin-bottom: 16px;
+}
+
+.input-city {
+  width: 60%;
+}
+
+.input-row .input-province,
+.input-row .input-postal {
+  width: 20%;
+}
+
+.add-skill-button {
+  padding: 8px;
+}
+
+.input-skill-row {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+label[for='skill'] {
+  display: inline-block;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+
+.skill-item {
+  padding: 4px 16px;
+  margin-right: 8px;
+  border: solid 1px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.skill-item button {
+  background-color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.skill-item i {
+  cursor: pointer;
+}

@@ -1,0 +1,78 @@
+.bold {
+  font-weight: bold;
+}
+
+.resume-container {
+  width: var(--resume-width);
+  height: var(--resume-height);
+  background-color: white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.resume-container hr {
+  background-color: var(--primary-color);
+  border: none;
+  height: 2px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  padding: 36px 0px 8px 0px;
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
+}
+
+.header h1 {
+  font-size: 42px;
+}
+
+.row-gap-32 {
+  display: flex;
+  gap: 32px;
+}
+
+.resume-body {
+  padding: 28px;
+}
+
+.resume-section {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.resume-section hr {
+  color: var(--primary-color);
+}
+
+.section-content li {
+  margin-bottom: 20px;
+}
+
+.section-content li:last-child,
+.resume-section > p {
+  margin-bottom: 0px;
+}
+
+.resume-section h2 {
+  flex-shrink: 0;
+  width: 30%;
+  color: var(--primary-color)
+}
+
+.work-entry .job-desc {
+  margin-top: 8px;
+}
+
+.skill-list-display {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+}
+
+.skill-list-display li {
+  list-style: inside;
+}
