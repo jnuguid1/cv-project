@@ -75,6 +75,7 @@ label[for='skill'] {
   padding: 4px 16px;
   margin-right: 8px;
   border: solid 1px;
+  border-color: darkgrey;
   display: flex;
   gap: 8px;
   align-items: center;

@@ -2,7 +2,7 @@
   --primary-color: #FE7A66;
   --primary-font-color: white;
   --secondary-font-color: black;
-  --resume-width: 8.5in;
+  --resume-width: 8.3in;
   --resume-height: 11in;
 }
 
@@ -36,20 +36,6 @@ li {
 
 .app-header {
   margin-bottom: 32px;
-}
-
-.button-enabled {
-  background-color: lightgreen;
-}
-
-.button-disabled {
-  cursor: not-allowed;
-  background-color: lightgrey;
-  pointer-events: none;
-}
-
-.button-disabled:hover {
-  background-color: lightgrey;
 }
 
 .button-row {

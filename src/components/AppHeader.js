@@ -1,35 +1,49 @@
 import React, {Component} from 'react';
+import Pdf from 'react-to-pdf';
 
 class AppHeader extends Component {
   render() {
-    let editButtonClass;
-    let previewButtonClass;
+    let shownButton;
+    let downloadButton;
     if (this.props.showPreview) {
-      editButtonClass = 'regular-button button-enabled';
-      previewButtonClass = 'regular-button button-disabled';
+      shownButton = 
+        <button
+        type='button'
+        className='regular-button'
+        onClick={this.props.onEdit}
+        >
+          Edit
+        </button>
+      downloadButton = 
+      <Pdf targetRef={this.props.refprop} filename='my-resume.pdf'>
+        {({toPdf}) => (
+          <button
+            type='button'
+            className='regular-button'
+            onClick={toPdf}
+          >
+            Download
+          </button>
+        )}
+      </Pdf>
     } else {
-      editButtonClass = 'regular-button button-disabled';
-      previewButtonClass = 'regular-button button-enabled';
+      shownButton =
+        <button
+        type='button'
+        className='regular-button'
+        onClick={this.props.onSubmit}
+        >
+          Preview
+        </button>
+      downloadButton = null;
     }
 
     return (
       <div className='app-header'>
         <h1>Resume Builder</h1>
-        <div class="button-row">
-          <button
-            type='button'
-            className={editButtonClass}
-            onClick={this.props.onEdit}
-          >
-            Edit
-          </button>
-          <button
-            type='button'
-            className={previewButtonClass}
-            onClick={this.props.onSubmit}
-          >
-            Preview
-          </button>
+        <div className="button-row">
+          {shownButton}
+          {downloadButton}
         </div>
         
       </div>

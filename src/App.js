@@ -7,6 +7,8 @@ import SchoolEntry from './components/form/SchoolEntry';
 import AppHeader from './components/AppHeader';
 import uniqid from 'uniqid';
 
+const ref = React.createRef();
+
 class App extends Component {
   constructor() {
     super();
@@ -267,6 +269,7 @@ class App extends Component {
             skills: this.state.skills,
           }}
           onEdit={this.handleEdit}
+          refprops={ref}
         />;
     } else {
       content = 
@@ -301,6 +304,7 @@ class App extends Component {
           onSubmit={this.handleSubmit} 
           onEdit={this.handleEdit}
           showPreview={this.state.showPreview}
+          refprop={ref}
         />
         {content}
       </div>

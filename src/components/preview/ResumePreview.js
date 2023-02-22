@@ -8,9 +8,9 @@ import '../../styles/ResumePreview.css';
 
 class ResumePreview extends Component {
   render() {
-    const {inputs, onEdit} = this.props;
+    const {inputs, refprops } = this.props;
     return(
-      <div className='preview-container'>
+      <div className='preview-container' ref={refprops}>
         <div className="resume-container">
           <Header
             firstName={inputs.firstName}
